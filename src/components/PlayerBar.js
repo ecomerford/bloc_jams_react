@@ -17,7 +17,7 @@ class PlayerBar extends Component {
         </section>
         <section id="volume-control">
           <div className="current-time">-:--</div>
-          <input type="range" className="seek-bar" value="0" />
+          <input type="range" className="seek-bar" value="0"/>
           <div className="icon ion-volume-high"></div>
         </section>
       </section>
