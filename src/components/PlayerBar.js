@@ -16,7 +16,16 @@ class PlayerBar extends Component {
           </button>
         </section>
         <section id="volume-control">
-          <div className="current-time">{this.props.currentTime}</div>
+          <input
+            type="range"
+            className="volume-slider"
+            value={this.props.currentVolume}
+            max="1"
+            min="0"
+            step=".01"
+            onChange={this.props.handleVolumeChange}
+          />
+          <div className="current-time">{this.props.formatTime(this.props.currentTime)}</div>
           <input
             type="range"
             className="seek-bar"
