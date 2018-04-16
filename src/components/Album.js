@@ -14,7 +14,7 @@ class Album extends Component {
       currentTime: 0,
       duration: album.songs[0].duration,
       isPlaying: false,
-      currentVolume: .5
+      volume: .5
     };
 
     this.audioElement = document.createElement('audio');
@@ -88,7 +88,8 @@ class Album extends Component {
 
   handleVolumeChange(e) {
     const newVolume = e.target.value;
-    this.setState({currentVolume: newVolume})
+    this.audioElement.volume = newVolume;
+    this.setState({volume: newVolume})
   }
 
   formatTime(time) {
@@ -105,7 +106,7 @@ class Album extends Component {
   }
 
   render() {
-    console.log(this.state.currentVolume);
+    console.log(this.state.volume);
     return (
       <section className='album'>
         <section id='album-info'>
