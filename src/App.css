@@ -22,6 +22,71 @@
   font-size: large;
 }
 
+.mdl-layout__header {
+  color: white;
+}
+
+.mdl-navigation {
+  color: black;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.container #album-title {
+  font-family: 'Rokkitt', serif;
+}
+
+.container .artist {
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+#release-info {
+  font-family: 'Rokkitt', serif;
+}
+
+.song-title {
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.point-title {
+  font-family: 'Rokkitt', serif;
+}
+
+.mdl-grid {
+  font-family: 'Rokkitt', serif;
+  text-align: center;
+}
+
+.mdl-layout-title {
+  font-family: 'Rokkitt', serif;
+  text-align: left;
+}
+
+.hero-title {
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.library-title {
+  font-family: 'Cedarville Cursive', cursive;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#album-cover-art {
+  width: 100%;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

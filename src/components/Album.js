@@ -106,19 +106,19 @@ class Album extends Component {
   }
 
   render() {
-    console.log(this.state.volume);
     return (
       <section className='album'>
-        <section id='album-info'>
-          <img id='album cover art' src={this.state.album.albumCover} alt='Album Cover' />
-          <div className='album details'>
-            <h1 id='album-title'>{this.state.album.title}</h1>
-            <h2 className='artist'>{this.state.album.artist}</h2>
+        <div className="container">
+          <img id='album-cover-art' src={this.state.album.albumCover} alt='Album Cover' />
+          <div className='album details centered'>
+            <h3 id='album-title'>{this.state.album.title}</h3>
+            <h3 className='artist'>{this.state.album.artist}</h3>
             <div id='release-info'>{this.state.album.releaseInfo}</div>
           </div>
-        </section>
+        </div>
         <table
           id='song-list'
+          align='center'
         >
           <colgroup>
             <col id='song-number-column' />
